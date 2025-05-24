@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { goto } from "$app/navigation";
+
 	let username = $state('');
 	let password = $state('');
 
@@ -13,6 +15,10 @@
 			console.log(`Username: ${username}\nPassword: ${password}`)
 		}
 	}
+
+	function gotoRegister(): void {
+		goto("/register")
+	}
 </script>
 
 <main>
@@ -23,7 +29,7 @@
 	</div>
 	<div class="container-buttons">
 		<button class="btn-login" onclick={printCredentials}> Login </button>
-		<button class="btn-register"> Register </button>
+		<button class="btn-register" onclick={gotoRegister}> Register </button>
 	</div>
 </main>
 
