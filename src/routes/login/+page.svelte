@@ -1,6 +1,18 @@
 <script lang="ts">
 	let username = $state('');
 	let password = $state('');
+
+	function printCredentials(): void {
+		if (username.trim() === '') {
+			alert("Username can't be empty!");
+			return;
+		} else if (password.trim() === '') {
+			alert("Password can't be empty!");
+			return;
+		} else {
+			console.log(`Username: ${username}\nPassword: ${password}`)
+		}
+	}
 </script>
 
 <main>
@@ -9,8 +21,8 @@
 		<input type="text" bind:value={username} placeholder="Username" class="big-input" />
 		<input type="text" bind:value={password} placeholder="Password" class="big-input" />
 	</div>
-	<div class = "container-buttons">
-		<button class="btn-login"> Login </button>
+	<div class="container-buttons">
+		<button class="btn-login" onclick={printCredentials}> Login </button>
 		<button class="btn-register"> Register </button>
 	</div>
 </main>
