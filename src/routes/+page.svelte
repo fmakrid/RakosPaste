@@ -23,18 +23,6 @@
 </main>
 
 <style>
-	main {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100vh;
-		background-color: #f9fafb;
-		flex-direction: column;
-		gap: 1rem;
-	}
-
-
-
 	.big-input {
 		width: 600px;
 		height: 80px;

@@ -34,15 +34,6 @@
 </main>
 
 <style>
-	main {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		height: 100vh;
-		gap: 1rem;
-	}
-
 	.container-input {
 		display: flex;
 		flex-direction: column;
@@ -63,8 +54,4 @@
 		background-color: yellowgreen;
 	}
 
-	.title {
-		font-size: 2rem;
-		padding-bottom: 4rem;
-	}
 </style>
