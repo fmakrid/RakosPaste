@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { goto } from "$app/navigation";
+
 	let text = $state('');
 
 	function saveText(): void {
@@ -10,7 +12,7 @@
 	}
 
     function gotoLogin(): void {
-
+        goto("/login")
     }
 </script>
 
