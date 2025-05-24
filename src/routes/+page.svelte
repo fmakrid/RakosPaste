@@ -31,14 +31,7 @@
 		gap: 1rem;
 	}
 
-    button {
-        color: white;
-		padding: 1rem 2rem;
-		font-size: 1.2rem;
-		border: none;
-		border-radius: 8px;
-		cursor: pointer;
-    }
+
 
 	.big-input {
 		width: 600px;
